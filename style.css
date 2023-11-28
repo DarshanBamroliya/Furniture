@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+*{
+    font-family: 'Lato', sans-serif;
+}
+a.navbar-brand{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.navbar-expand-lg .navbar-collapse {
+    font-size: 18px;
+    justify-content: flex-end;
+}
+.hero-main{
+    background-image: url('./img/living-rooms.jpg');
+    padding-top: 35%;
+    padding-bottom: 7%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-modern{
+    background-color: white;
+    opacity: 0.5;
+    max-width: 500px;
+    border-radius: 5px;
+}
+.hero-modern a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    display: flex;
+    justify-content: end;
+    letter-spacing: 1px;
+}
+.product-main{
+    box-shadow: 2px 5px 5px 5px #999;
+    margin-right: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.product-main button{
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 35px;
+}
+.product-main button:hover{
+    background-color: #000;
+}
+#product-list{
+    box-shadow: 2px 5px 5px 5px #999;  
+}
+.product-main-list{
+    display: flex;
+    margin-right: 5px;
+    margin: 3rem 0rem;
+    padding: 10px;
+    border-right: 1px solid #999;
+}
+.product-main-list img{
+    width: 50%; 
+}
+.product-main-list button{
+    border: none;
+    background-color: #333;
+    color: white;
+    padding: 8px 20px;
+}
+.custom-class .product-main-list{
+    border: none;
+}
+.product-main-list button:hover{
+    background-color: #000;
+}
+.product-main-list p{
+    color: #cccc00;
+    font-weight: 800;
+}
+@media(max-width:1200px){
+    .product-main img{
+        width: 100%;
+    }
+    .product-main-list button{
+        padding: 8px 10px;
+    }
+}
+@media(min-width:991.99px){
+    .product-main-list{
+        border-right: 1px solid #999;
+    }
+
+}
+@media(max-width:991.98px){
+    .product-main-list button{
+        padding: 6px 15px;
+    }
+    .product-main-list{
+        margin: 1rem 0rem;
+    }
+    #product-list .product-list:nth-child(even) .product-main-list{
+        border-right: none;
+    }
+}
+@media(max-width: 768px) {
+    .hero-modern a{
+        font-size: 20px;        
+    }
+    .hero-modern{
+        background-color: white;
+        opacity: 0.5;
+        max-width: 350px;
+        border-radius: 5px;
+    }
+    .product-main{
+        display: flex;
+        margin: 0 auto;
+    }
+    .product-main img{
+        width: 240px;
+        height: 180px;
+    }
+}
+@media(max-width: 576px) {
+    #product-list{
+        box-shadow: 0px 0px 0px 0px;   
+    }  
+    .product-list img{
+        width: 50%;
+    }
+    .product-main-list{
+        box-shadow: 2px 5px 5px 5px #999;   
+        padding: 30px;
+    }
+    .product-main-list img{
+        width: 40%;
+    }
+}
+@media(max-width: 515px) {
+    .product-main-list button{
+        padding: 8px 10px;
+    }
+}
+@media(max-width: 435px) {
+    .product-main-list button{
+        padding: 8px 10px;
+    }
+    .product-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-modern{
+        max-width: 300px;
+    }
+    .hero-modern a{
+        font-weight: 700;
+        font-size: 15px;
+    }
+    .product-main-list img{
+        width: 50%;
+    }
+}
